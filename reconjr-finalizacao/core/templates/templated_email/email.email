@@ -1,0 +1,9 @@
+{% block html %}
+    <h1>{{nome}} enviou a seguinte mensagem:</h1>
+    <p>{{mensagem}}</p>
+    <br>
+    <h3>Telefone:</h3>
+    <p>{{tel}}</p>
+    <h3>Email para contato:</h3>
+    <p>{{mail}}</p>
+{% endblock %}

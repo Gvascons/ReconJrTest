@@ -1,0 +1,279 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+	<title>Recon Jr</title>
+	<link rel="shortcut icon" href="{% static 'images/Logo.png' %}"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="{% static 'slick/slick.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'slick/slick-theme.css' %}">
+    <link rel="stylesheet" type="text/css" media="screen" href="{% static 'css/style.css' %}"/>
+</head>
+<body>
+	<!-- Navbar -->
+	<header>
+      <div class="navbar">
+            <ul class="nav">
+                <li class="item">
+                    <a href="/#inic">INÍCIO</a>
+                </li>
+                <li class="item">
+                    <a href="/#sobr">SOBRE NÓS</a>
+                </li>
+                <li class="item">
+                    <a href="/#serv">SERVIÇOS</a>
+                </li>
+                <li class="item">
+                    <a href="/#contat" class="contact">CONTATO</a>
+                </li>
+            </ul>
+        <div class="hamburguer"> 
+            <i class="fas fa-bars"></i> 
+            <ul class="nav_resp">
+                <li class="item">
+                    <a href="/#inic">INÍCIO</a>
+                </li>
+                <li class="item">
+                    <a href="/#sobr">SOBRE NÓS</a>
+                </li>
+                <li class="item">
+                    <a href="/#serv">SERVIÇOS</a>
+                </li>
+                <li class="item">
+                    <a href="/#contat" class="contact">CONTATO</a>
+                </li>
+            </ul>
+        </div>
+        <a href="#inic"><img src="{% static 'images/Recon-de-lado2.png' %}"></a>
+      </div>  
+    </header>
+    <!-- End of navbar -->
+    <!-- Banner -->
+    <div id="inic" class="banner" style="background-image: url({% static 'images/banner.jpg' %})">
+        <div class="layer">
+    		<div class="big_logo">
+    			<img src="{% static 'images/Logo2.png' %}">
+    		</div>
+    		<div class="big_logo_title">
+    			<h1>Texto chamativo aqui Texto chamativo aqui Texto chamativo aqui</h1>
+    		</div>
+    		<div class="big_logo_subtitle">
+    			<h2>Nos contrate Nos contrate Nos contrate</h2>
+            </div>
+            <a href="/#serv" class="invite">
+    		<div class="convida_servicos">
+    		    <h3>Conheça nossos serviços</h3>
+            </div>
+            </a>
+    	</div>
+    </div>
+    <!-- End of banner -->
+    <div class="sobre_nos" id="sobr">
+        <div class="header">
+            <div class="header2">
+                <h1>SOBRE NÓS</h1>
+            </div>
+            <div class="logo">
+                <img src='{% static 'images/Logo.png' %}'> 
+            </div>
+        </div>
+        <div class="texto_sobre">
+            <p>
+                Aqui ficará a descrição da empresa.Aqui ficará a descrição da empresa.
+                Aqui ficará a descrição da empresa.Aqui ficará a descrição da empresa.
+            </p>
+        </div>
+        <div class="mvv_all">
+            <div class="mvv">
+                <i class="fas fa-rocket"></i>
+                <h2>MISSÃO</h2>
+                <p>Capacitar a comunidade acadêmica e garantir serviços de qualidade, formando gestores de impacto na sociedade.</p>
+            </div>
+            <div class="mvv">
+                <i class="fas fa-eye"></i>
+                <h2>VISÃO</h2>
+                <p>Consolidar-se como empresa júnior referência no recôncavo baiano, por meio da absoluta satisfação dos seus clientes e na formação de líderes, tornando-se destaque em orientação empresarial e consultoria júnior.</p>
+            </div>
+            <div class="mvv">
+                <i class="fas fa-hand-holding-heart"></i>
+                <h2>VALORES</h2>
+                <ul>
+                    <li>
+                        Orgulho de ser RECON Jr.
+                    </li>
+                    <li>
+                        Pró atividade cooperativa
+                    </li>
+                    <li>
+                        Excelência
+                    </li>
+                    <li>
+                        Transparência
+                    </li>
+                    <li>
+                        Empatia
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="top_servicos"  id="serv"></div>
+	<div class="servicos_container">
+		<div class="servicos_label"><h1>SERVIÇOS</h1></div>
+		<div class="slider-wr">
+			<section class="servicos-slider">
+		    	<div class="item-container">
+		    		<div class="item">
+			    		<div class="imagem_do_servico" style="background-image: url({% static 'images/servico1.jpg' %})"></div> 
+			    		<div><h3>Titulo do serviço 1</h3></div>
+			    		<div><p>Descrição desse serviço. Descrição desse serviço. Descrição desse serviço. Descrição desse serviço. Descrição desse serviço.</p></div>
+			    	</div>
+		    	</div>
+      			<div class="item-container">
+      				<div class="item">
+			    		<div class="imagem_do_servico" style="background-image: url({% static 'images/servico2.jpg' %})"></div>
+			    		<div><h3>Titulo do serviço 2</h3></div>
+			    		<div><p>Descrição desse serviço. Descrição desse serviço. Descrição desse serviço. Descrição desse serviço. Descrição desse serviço.</p></div>
+			    	</div>
+		    	</div>
+      			<div class="item-container">
+      				<div class="item">
+			    		<div class="imagem_do_servico" style="background-image: url({% static 'images/servico3.jpg' %})"></div>
+			    		<div><h3>Titulo do serviço 3</h3></div>
+			    		<div><p>Descrição desse serviço. Descrição desse serviço. Descrição desse serviço. Descrição desse serviço. Descrição desse serviço.</p></div>
+			    	</div>
+		    	</div>
+      			<div class="item-container">
+      				<div class="item">
+			    		<div class="imagem_do_servico" style="background-image: url({% static 'images/servico4.jpg' %})"></div>
+			    		<div><h3>Titulo do serviço 4</h3></div>
+			    		<div><p>Descrição desse serviço. Descrição desse serviço. Descrição desse serviço. Descrição desse serviço. Descrição desse serviço.</p></div>
+			    	</div>
+		    	</div>
+      			<div class="item-container">
+      				<div class="item">
+			    		<div class="imagem_do_servico" style="background-image: url({% static 'images/servico5.jpg' %})"></div>
+			    		<div><h3>Titulo do serviço 5</h3></div>
+			    		<div><p>Descrição desse serviço. Descrição desse serviço. Descrição desse serviço. Descrição desse serviço. Descrição desse serviço.</p></div>
+			    	</div>
+		    	</div>
+			</section>
+		</div>
+		<div class="entre_em_contato_container">
+            <a href="#contat" class="entre_em_contato">ENTRE EM CONTATO</a>
+        </div>
+	</div>
+    
+    <div class="nossa_historia">
+        <div class="back_hist" style="background-image: url({% static 'images/equipe_reconjr.png' %})">
+            <div class="clippy"></div>
+        </div>
+        <div class="content_hist">
+            <div class="header">
+                <h1>NOSSA HISTÓRIA</h1>
+            </div>
+            <div class="historias">
+                <div class="seta">
+                    <div class="reta"></div>
+                    <div class="triangulo"></div>
+                </div>
+                <div class="circulos">
+                    <div class="circulo1">
+                        <button type="button" class="tab1">                            
+                            <div class="bloco" id="bloco1">
+                                <div class="header_bloco">
+                                    <h2>2011</h2>
+                                </div>
+                                <div class="content">
+                                    <p> O que aconteceu no ano de 2011, foi importante para nossa empresa.</p>
+                                </div>
+                            </div>
+                        </button>
+                    </div>
+                    <div class="circulo2">
+                        <button type="button" class="tab2">                            
+                            <div class="bloco" id="bloco2">
+                                <div class="header_bloco">
+                                    <h2>2012</h2>
+                                </div>
+                                <div class="content">
+                                    <p> O que aconteceu no ano de 2012, foi importante para nossa empresa.</p>
+                                </div>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+                <div class="blocos">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class = "nossos_membros">
+        <div class="titulo_label" >
+            <h1>
+                Nossos Membros
+            </h1>
+        </div>
+        <div class="slider-wr" >
+            <div class="membros-slider">
+                {% for membro in membros %}
+                <div class="container-membro">
+                    <div>
+                        <div class="imagem-membro" style="background-image: url({{membro.image.url}})" alt="{{membro.name}} " >
+                        </div>
+                        <div class="overlay">
+                            <span>
+                                {{membro.name}}
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+    <div class="contato_over_bckg" id="contat"></div>
+    <div class="contato_container">
+    	<div class="titulo_label"><h1>CONTATO</h1></div>
+    	<div class="contato">
+    		<div class="formulario">
+    			<form class = "form-in" method="POST">
+                    {% csrf_token %}
+				 	<div class="form_item"><input type="text" name="nome" placeholder="Nome"></div>
+				 	<div class="form_item"><input type="email" name="email" placeholder="Email"></div>
+				 	<div class="form_item"><input type="tel" name="telefone" title="(DD)XXXXX-XXXXX"placeholder="Telefone"></div>
+				 	<div class="form_item" id="mensagem_center"><textarea name="mensagem" placeholder="Digite a sua mensagem aqui"></textarea></div>
+				 	<div class="botao_enviar">
+                        <input type="submit" id="enviar" value="Enviar">
+                    </div>
+				</form>
+    		</div>
+    		<div class="map" ><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1944.0455270829282!2d-39.25408599814721!3d-12.966025091109662!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc2a7e7d39bb6e662!2sRECON+Jr.+-+Solu%C3%A7%C3%B5es+em+Consultoria+Empresarial!5e0!3m2!1spt-BR!2sbr!4v1528842874390" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe></div>
+    	</div>
+    </div>
+	<footer>
+		<div class="footer_icons">
+			<a href="https://www.facebook.com/reconjr" target="_blank" id="facebook_icon"><img src="{% static 'images/facebook-square.png' %}"></a>
+			<a href="https://www.instagram.com/recon.jr/" target="_blank" id="instagram_icon"><img src="{% static 'images/instagram.png' %}"></a>
+		</div>
+		<div class="footer_contact">
+			<p>reconresolve@reconjr.com</p>
+			<p>(75)3631-2855 Ramal:246</p>
+		</div>
+		<div class="footer_endereco">
+			<p>localizacao localizacao localizacao localizacao Recife - PE</p>
+		</div>
+		<div class="footer_autoral">
+            <a href="https://www.facebook.com/citiufpe" target="_blank"><span>© 2018 CITi - Todos os direitos reservados</span></a> <span>Made with <i class="fa fa-code"></i> and <i class="far fa-heart"></i></span>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+    <script src="{% static 'slick/slick.js' %}" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript" src="{% static 'js/main.js' %}"></script>
+    <script src="{% static 'slick/jquery.min.js' %}" type="text/javascript"></script>
+</body>
+</html>

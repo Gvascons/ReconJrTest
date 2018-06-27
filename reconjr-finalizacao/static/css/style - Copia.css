@@ -1,0 +1,684 @@
+html{
+  margin: 0px;
+  border: 0px;
+  padding: 0px;
+}
+body {
+margin: 0;
+padding: 0;
+width: 100%;
+/* Altura qualquer */
+top: 0;
+background-color: #E0E0E0;
+}
+
+
+.nossa_historia{
+  display: flex;
+  width:100%;
+  height: 500px;
+  background-color:#111E35 ;
+}
+
+.back_hist{
+position:absolute;
+z-index: 0;
+width:100%;
+  height:500px;
+  background-image: url(images/equipe_reconjr.png);
+  max-height: 500px;
+}
+.clippy{
+  position:relative;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  -webkit-clip-path: ellipse(53% 6% at 50% 0%);
+  clip-path: ellipse(53% 6% at 50% 0%);
+  background-color:#F2F2F2;
+}
+
+.content_hist{
+  position:absolute;
+  z-index: 3;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-height: 500px;
+  color: white;
+}
+
+.content_hist .header{
+  margin-top:40px;
+  height: 80px;
+  width: 300px;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+}
+.content_hist .header h1{
+  margin-bottom: 0px;
+  font-size:2.5em;
+  font-family:'titulo';
+  letter-spacing:3px;
+
+}
+
+#underline_titulo{
+  display: flex;
+  height: 5px;
+  width:200px;
+  background-color: orange;
+}
+
+.historias{
+  height: 250px;
+  width:100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: space-between;
+}
+.seta{
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  height: 15px;
+  width:65% ;
+}
+.reta{
+  margin-top:7px;
+  display:flex;
+  height: 5px;
+  width: 90%;
+  background-color: #F2F2F2;
+}
+.triangulo{
+  width: 0;
+height: 0;
+border-top: 10px solid transparent;
+border-left: 20px solid #F2F2F2;
+border-bottom: 10px solid transparent;
+}
+
+.circulos{/*Aqui ficarão todos as historias*/
+  position:absolute;
+  justify-content: center;
+  display:flex;
+  height: 15px;
+  width: 100%;
+}
+.circulo1{
+  position:relative;
+  right: 200px;
+  z-index:1;
+  height: 20px;
+  width: 20px;
+  background-color: #F5A503;
+  border-radius: 50%;
+  right: 300px;
+
+}
+
+.tab1{
+  position:relative;
+  top:-5px;
+  height: 20px;
+  width: 20px;
+  background-color: #F5A503;
+  border-radius: 50%;
+  margin:0;
+  border:0;
+
+}
+
+.circulo1:hover .bloco1{
+  display:block;
+}
+
+.circulo1:hover .tab1{
+top:0px;
+}
+
+.tab1:focus .bloco1{
+display:block;
+}
+
+.bloco1{
+  position:relative;
+  top:23px;
+  left:5px;
+  z-index:5;
+  border-radius: 2%;
+  background-color:#FFFFFF;
+  width:310px;
+  height:180px;
+  right: 150px;
+  display:none;
+}
+/*Cada bloco precisa disso:*/
+.circulo2{
+  position:relative;
+  left: -140px;
+  z-index:1;
+  height: 20px;
+  width: 20px;
+  background-color: #F5A503;
+  border-radius: 50%;
+  right: 300px;
+}
+
+.tab2{
+  position:relative;
+  height: 20px;
+  width: 20px;
+  background-color: #F5A503;
+  border-radius: 50%;
+  margin:0;
+  border:0;
+  top:-5px;
+}
+
+.circulo2:hover .tab2{
+top:0px;
+}
+
+.circulo2:hover .bloco2{
+  display:block;
+}
+
+.tab2:focus .bloco2{
+display:block;
+}
+
+.bloco2{
+  position:relative;
+  top:23px;
+  left:5px;
+  z-index:5;
+  border-radius: 2%;
+  background-color:#FFFFFF;
+  width:310px;
+  height:180px;
+  right: 150px;
+  display:none;
+}
+/*ate aqui*/
+.header_bloco h2{
+  width:100%;
+  text-align: start;
+  margin-top:0px;
+  margin-bottom:0px;
+  font-size: 1.6em;
+  font-family:'titulo';
+  letter-spacing:3px;
+}
+
+.header_bloco{
+  display:flex;
+  padding-left: 10px;
+  padding-top:4px;
+  padding-bottom:2px;
+  width:310px;
+  height:30px;
+  background-color: #F5A503;
+  border-top-left-radius: 2%;
+  border-top-right-radius: 2%;
+}
+
+.content{
+  color:#041733;
+  padding-left:10px;
+  font-family:"conteudo";
+  width: 300px;
+  height: 135px;
+}
+
+.content p{
+  font-size:1.1em;
+}
+/* com 100px de width precisamos mudar a localização das bolas da historia*/
+
+/*fontes*/
+@font-face {
+  font-family: 'LUZRO';
+  font-style: normal;
+  font-weight: normal;
+  src: local('LuzSans-Book'), url('fonts/LUZRO.woff') format('woff'),
+                              url("fonts/LUZRO.ttf") format("truetype");
+  }
+
+@font-face {
+  font-family:"titulo";
+  src:url("fonts/Al__gre_Sans.eot") format("eot"),
+      url("fonts/Al__gre_Sans.woff") format("woff"),
+      url("fonts/Al__gre_Sans.ttf") format("truetype"),
+      url("fonts/Al__gre_Sans.svg") format("svg");
+  font-weight: bold;
+  font-style:normal;
+}
+
+@font-face {
+font-family: 'AlegreSans-Regular';
+src: url("fonts/AlegreSans-Regular.ttf") format("truetype");
+}
+
+@font-face {
+font-family: 'LUZRO';
+src: url("fonts/LUZRO.ttf") format("truetype");
+}
+
+@font-face {
+font-family: 'MizoArial';
+src: url("fonts/MizoArial.ttf") format("truetype");
+}
+
+/* para remover*/
+
+.antes{
+width: 100%;
+height: 30vh;
+background-color: #F2F2F2; 
+}
+
+.depois{
+width: 100%;
+height: 30vh;
+background-color: #111E35;
+}
+
+*{
+box-sizing: border-box;
+}
+
+
+
+header {
+background-color: #111E35;
+position: fixed;
+top: 0;
+width: 100%;
+height: 50px;
+box-shadow: 0px 2px 4px #000;
+font-family: "AlegreSans-Regular";
+}
+
+.navbar {
+position: relative;
+width: 100%;
+padding: 0;
+margin: 0;
+}
+
+.navbar .nav {
+margin: 0;
+padding: 0;
+display: inline-block;
+float: right;
+margin-right: 1%;
+}
+
+.navbar .nav .item {
+list-style: none;
+display: inline-block;
+font-size: 22px;
+line-height: 50px;
+margin-right: 60px;
+margin-top: 3px;
+transition: 0.5s ease;
+color: white;
+}
+
+.navbar .nav .item a {
+text-shadow: 2px 2px 3px #000;
+text-decoration: none;
+color: inherit;
+}
+
+.navbar .nav .item:hover{
+color: #F5A503;
+}
+
+.navbar .logo {
+float: left;
+display: inline-block;
+margin-top: 10px;
+margin-left: 2%;
+padding: 3px;
+transition: 0.5s ease;
+}
+
+.navbar .logo img {
+height: 30px;
+}
+
+.banner {
+width: 100%;
+padding: 0;
+margin: 0;
+height: 800px;
+background-image: url("../Imgs/banner.jpg");
+background-repeat: no-repeat;
+background-size: cover;
+background-position: right;
+}
+
+.banner .layer {
+padding: 0px; 
+margin: 0px;
+width: 100%;
+height: 800px;
+background-color: rgba(17, 30, 53, 0.66);
+}
+
+.big_logo {
+padding-top: 118px;
+margin-left: auto;
+margin-right: auto;
+display: flex;
+justify-content: center;
+width: 30%;
+
+}
+
+.big_logo img{
+height: 100%;
+width: 100%;
+max-width: 350px;
+}
+
+.big_logo_title {
+display: block;
+margin-top: 10px;
+margin-left: auto;
+margin-right: auto;
+width: 60%;
+text-align: center;
+color: white;
+font-family: "LUZRO";
+}
+
+.big_logo_title h1 {
+  font-size: 30px;
+}
+
+.big_logo_subtitle {
+display: block;
+width: 40%;
+margin-left: auto;
+margin-right: auto;
+text-align: center;
+color: white;
+font-family: "LUZRO";
+}
+
+.big_logo_subtitle h2 {
+margin-top: 0px;
+margin-bottom: 0px;
+font-size: 25px;
+}
+
+.convida_servicos {
+margin-top: 70px;
+width: 300px;
+margin-left: auto;
+margin-right: auto;
+text-align: center;
+color: white;
+background-color: #111E35;
+font-family: "AlegreSans-Regular";
+border-radius: 5px;
+height: 54px; 
+transition: 200ms;
+}
+
+.convida_servicos:hover {
+background-color: #F2F2F2;
+color: #111E35;
+transform: scale(1.02);
+cursor: pointer;
+
+}
+
+.convida_servicos h3 {
+padding-top: 14px;
+font-size: 22px;
+letter-spacing: 4px;
+text-align: center;
+}
+
+/* */
+
+.blank {
+width: 100%;
+height: 1000px;
+background-color: #E0E0E0;
+}
+
+.contato_over_bckg {
+width: 100%;
+height: 100px;
+background-color: #F2F2F2;
+border-radius: 100% 100% 0% 0%;
+}
+
+.contato_container {
+width: 100%;
+height: auto;
+background-color: #F2F2F2;
+padding-bottom:40px;
+}
+
+.contato_container h2{
+font-size: 35px;
+font-family: "AlegreSans-Regular";
+color: #111E35;
+padding: 0;
+line-height: 40px;
+border-bottom: 3px solid orange;
+letter-spacing: 3px;
+}
+
+.contato_label {
+padding: 0;
+display: flex;
+justify-content: center;
+}
+
+.contato {
+height: auto;
+width: 70%;
+background-color: #111E35;
+box-shadow: 0px 2px 4px #000;
+margin-right: auto;
+margin-left: auto;
+border-radius: 3px;
+display: flex;
+flex-wrap: wrap;
+justify-content: space-around;
+align-content: space-around;
+padding-top:30px;
+padding-bottom:30px;
+}
+
+.formulario {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+align-content: space-around;
+width: 45%;
+height: 380px;
+padding:0;
+}
+
+.form-in{
+height:100%;
+width:100%;
+padding: 0;
+margin: 0;
+}
+.form_item {
+width: 100%;
+}
+
+input, textarea {
+margin-bottom: 32px;
+font-family: "MizoArial";
+letter-spacing: 1px;
+width: 100%;
+height: 30px;
+box-shadow: 0px 2px 4px #000;
+background-color: #F1F1F1;
+border: none;
+border-radius: 2px;
+}
+
+#mensagem_center textarea{
+height: 120px;
+padding-top: 10px;
+width: 100%;
+}
+
+#enviar{
+width: 100px;
+float: right;
+font-family: "AlegreSans-Regular";
+font-size: 23px;
+height: 40px;
+letter-spacing: 2px;
+color: #111E35;
+background-color: orange;
+cursor: pointer;
+transition: 200ms;
+border-radius: 4px;
+box-shadow: 0px 2px 4px #000;
+}
+
+#enviar:hover{
+background-color: #F2F2F2;
+transform: scale(1.01);
+}
+
+.map {
+width: 45%;
+height:380px;
+border-radius: 4px;
+box-shadow: 0px 2px 4px #000;
+}
+
+footer {
+width: 100%;
+height: 170px;
+padding: 0;
+background-color: #111E35;
+box-shadow: -1px -2px 4px #000;
+font-family: "LUZRO";
+color: white;
+}
+
+.footer_icons {
+padding-top: 20px;
+display: flex;
+justify-content: center;
+}
+
+.footer_icons a img{
+width:32px;
+height:32px;
+}
+
+#facebook_icon {
+margin-right: 15px;
+margin-left: 15px;
+}
+
+#instagram_icon {
+margin-right: 15px;
+margin-left: 15px;
+}
+
+
+.footer_icons a {
+display:block;
+width:32px;
+height:32px;
+}
+
+.footer_contact {
+margin-top: 5px;
+clear: both;
+display: flex;
+justify-content: center;
+margin-right: 20px;
+line-height: 6px;
+}
+
+.footer_contact p {
+margin-right:16px;
+margin-left: 16px;
+}
+
+.footer_autoral {
+margin-left: 30px;
+}
+
+.footer_endereco {
+text-align: center;
+line-height: 2px;
+}
+
+@media (max-width: 800px){
+.big_logo img{
+  width: 240px;
+}
+.big_logo_title{
+  width: 80%;
+}
+.big_logo_subtitle{
+  width: 60%
+}
+.map{
+  margin-top:30px;
+  width:90%;
+  margin-bottom:30px;
+}
+.formulario{
+  margin-top:40px;
+  width: 90%;
+}
+.botao_enviar{
+  display:flex;
+  justify-content: center;
+}
+}
+
+@media (max-width: 500px){
+.banner{
+  height: 100vh;
+}
+.banner .layer{
+  height: 100vh;
+}
+.big_logo img{
+  width: 200px;
+}
+.big_logo_title h1{
+  font-size: 22px
+}
+.big_logo_subtitle h2{
+  font-size: 19px
+}
+.convida_servicos{
+  margin-top: 20px;
+  width: 210px;
+  height: 48px;
+}
+.convida_servicos h3{
+  font-size: 18px;
+  letter-spacing: 2px;
+}
+}
